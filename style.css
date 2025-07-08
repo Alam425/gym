@@ -9,7 +9,6 @@
 }
 
 .descriptiveText{
-    font-size: 11px;
     color: rgb(114, 114, 114);
     padding-top: 5px;
 }
@@ -20,12 +19,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 14px;
-    padding-right: 20px;
+    font-size: 18px;
+    padding-left: 30px;
 }
 
 .navItems {
@@ -40,7 +40,7 @@ nav a {
 
 .name {
     color: #E6533C;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 
@@ -53,14 +53,14 @@ header{
 
 .bannerMainText{
     font-weight: 800;
-    font-size: 40px;
+    font-size: 55px;
     line-height: 1;
     margin: 0;
 }
 
 .miama{
     font-family: "miama";
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 100;
 }
 
@@ -69,6 +69,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 300px;
+    padding: 40px;
 }
 
 .bannerText{
@@ -84,13 +85,14 @@ header{
 .joinNow, .downloadApp{
     background-color: #303030;
     border: none;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 30px;
     margin: 20px 0;
 }
 
 .joinNow{
     background-color: #E6533C;
+    margin-right: 10px;
 }
 
 .circle{
@@ -156,13 +158,18 @@ main{
 }
 
 .changeYourHabit{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .cardImg img{
     width: 100px;
     border-radius: 50%;
 }
+
+.changeYourHabitcard{
+    width: 280px;
+}
+
 
 /* -----------------extra Mile------------------ */
 
@@ -196,7 +203,7 @@ main{
 /* --------------traing & excercise------------- */
 
 .trainingExcercise{
-    padding: 30px 40px;
+    padding: 80px 40px 40px 40px;
     text-align: left;
 }
 
@@ -262,15 +269,155 @@ main{
 /* ---------------bmi calculator---------------- */
 
 .bmiCalculator{
-    padding: 40px;
+    padding: 80px 40px 40px 40px;
     text-align: left;
-    width: 40%;
     margin: auto;
+    width: 600px;
 }
 
 .bmiCalculatorChart{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #303030;
+    width: 100%;
+    padding: 40px 40px 80px 40px;
+}
 
+.bmicalculation, .bmiChart{
+    width: 35%;
+}
+
+.table{
+    width: 90%;
+    margin: auto;
+}
+
+table, th, tr, td{
+    border: 1px solid #6e6d6d;
+    border-collapse: collapse;
+    line-height: 3;
+}
+
+caption{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+td{
+    width: 200px;
+    color: #cac9c9;
+}
+
+.bmiDataInput1{
+    grid-area: height;
+}
+.bmiDataInput2{
+    grid-area: weight;
+}
+.bmiDataInput3{
+    grid-area: age;
+}
+.bmiDataInput4{
+    grid-area: sex;
+}
+.bmiDataInput5{
+    grid-area: factor;
+}
+
+.bmiInputs{
+    display: grid;
+    grid-template-areas:
+    "height weight"
+    "age sex"
+    "factor factor"
+    "calculate calculate";
+    gap: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.bmiCalculationInput{
+    background-color: #303030;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #414040;
+}
+
+#calculate{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+    border-top: 0;
+}
+
+.calculate{
+    background-color: #E6533C;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 60px;
+}
+
+
+/* -----------------meet out team----------------- */
+
+.meetOurTeam{
+    text-align: center;
+}
+
+.meetOurTeamImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    width: 1080px;
+    padding: 15px;
+    gap: 10px;
+    margin: auto;
+    background-color: #303030;
+    border-radius: 30px;
+}
+
+.meetOurTeamImage1{
+    background-image: linear-gradient(rgba(43, 43, 42, 0.219)), url("./images/trainer1.png");
+}
+.meetOurTeamImage2{
+    background-image: linear-gradient(rgba(61, 60, 59, 0.219)), url("./images/trainer2.png");
+}
+.meetOurTeamImage3{
+    background-image: linear-gradient(rgba(61, 60, 59, 0.219)), url("./images/trainer3.png");
+}
+.meetOurTeamImage4{
+    background-image: linear-gradient(rgba(61, 60, 59, 0.219)), url("./images/trainer4.png");
+}
+.meetOurTeamImage5{
+    background-image: linear-gradient(rgba(61, 60, 59, 0.219)), url("./images/trainer5.png");
+}
+.meetOurTeamImage6{
+    background-image: linear-gradient(rgba(61, 60, 59, 0.219)), url("./images/trainer6.png");
+}
+
+.meetOurTeamImage{
+    width: 350px;
+    height: 300px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+.trainer{
+    color: rgb(226, 223, 223);
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.meetOurTeamImage h4{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
 }

@@ -59,28 +59,28 @@
         </section>
 
         <section class="cards">
-            <div>
+            <div class="changeYourHabitcard">
                 <div class="cardImg">
                     <img width="100%" src="./images/image 3.png" alt="">
                 </div>
                 <h6>Movement</h6>
                 <p class="descriptiveText">We believe fitness should be accessible to everyone</p>
             </div>
-            <div>
+            <div class="changeYourHabitcard">
                 <div class="cardImg">
                     <img width="100%" src="./images/image 2.png" alt="">
                 </div>
                 <h6>Time</h6>
                 <p class="descriptiveText">We believe fitness should be accessible to everyone</p>
             </div>
-            <div>
+            <div class="changeYourHabitcard">
                 <div class="cardImg">
                     <img width="100%" src="./images/image 4.png" alt="">
                 </div>
                 <h6>Practice</h6>
                 <p class="descriptiveText">We believe fitness should be accessible to everyone</p>
             </div>
-            <div>
+            <div class="changeYourHabitcard">
                 <div class="cardImg">
                     <img width="100%" src="./images/image 5.png" alt="">
                 </div>
@@ -137,18 +137,83 @@
         </section>
 
         <section class="bmiCalculatorChart">
-            <div class="bmiCalculatorData">
-                <div class="bmiCalculationDataHeading">BMI Calculator Chart</div>
-                <div class="bmiChart"></div>
+            <div class="bmiChart">
+                <table>
+                    <caption>BMI Calculator Chart</caption>
+                    <thead>
+                        <th>BMI</th>
+                        <th>Weight Status</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <h1 class="bmiCalculationHeading"></h1>
-            <p class="descriptiveText"></p>
-            <input type="text" class="bmiDataInput1">
-            <input type="text" class="bmiDataInput2">
-            <input type="text" class="bmiDataInput3">
-            <input type="text" class="bmiDataInput4">
-            <input type="text" class="bmiDataInput5">
-            <button class="joinNow"></button>
+            <!-- </div> -->
+            <div class="bmicalculation">
+                <h1 class="bmiCalculationHeading">Calculate your BMI</h1>
+                <p class="descriptiveText">We believe fitness should be accessible to everyone, everywhere, regardless
+                    of income or access to a gym. </p>
+                <div class="bmiInputs">
+                    <input id="q" placeholder="Height/cm" type="number" class="bmiDataInput1 bmiCalculationInput">
+                    <input id="w" placeholder="Weight/kg" type="number" class="bmiDataInput2 bmiCalculationInput">
+                    <input id="e" placeholder="Age" type="number" class="bmiDataInput3 bmiCalculationInput">
+                    <input id="r" placeholder="Sex" type="" class="bmiDataInput4 bmiCalculationInput">
+                    <input id="t" placeholder="Select an activity factor" type="text"
+                        class="bmiDataInput5 bmiCalculationInput">
+                </div>
+                <div id="calculate">
+                    <input id="y" type="submit" class="calculate" value="Calculate">
+                </div>
+            </div>
+        </section>
+
+        <section class="bmiCalculator meetOurTeam">
+            <h1 class="changeYourHabit">Meet Out Team</h1>
+            <p class="descriptiveText">We believe fitness should be accessible to everyone, everywhere, regardless of
+                income or access to a gym.</p>
+        </section>
+
+        <section class="meetOurTeamImages">
+            <div class="meetOurTeamImage1 meetOurTeamImage">
+                <h4>JEROME BELL</h4>
+                <p class="trainer">Trainer</p>
+            </div>
+            <div class="meetOurTeamImage2 meetOurTeamImage">
+                <h4>CAMEROM WILLAMSOM</h4>
+                <p class="trainer">Trainer</p>
+            </div>
+            <div class="meetOurTeamImage3 meetOurTeamImage">
+                <h4>DARELL STEWARD</h4>
+                <p class="trainer">Trainer</p>
+            </div>
+            <div class="meetOurTeamImage4 meetOurTeamImage">
+                <h4>DIANNE RUSSELL</h4>
+                <p class="trainer">Trainer</p>
+            </div>
+            <div class="meetOurTeamImage5 meetOurTeamImage">
+                <h4>CODY FISHER</h4>
+                <p class="trainer">Trainer</p>
+            </div>
+            <div class="meetOurTeamImage6 meetOurTeamImage">
+                <h4>THERESA WEBB</h4>
+                <p class="trainer">Trainer</p>
+            </div>
         </section>
     </main>
 
