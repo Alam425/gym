@@ -179,7 +179,7 @@ main{
     align-items: center;
     padding: 20px 30px;
     margin: 0 50px;
-    background-color: #303030;
+    background-color: #202020;
     border-radius: 20px;
     height: 200px;
 }
@@ -420,4 +420,55 @@ td{
     position: absolute;
     bottom: 20px;
     left: 10px;
+}
+
+/* ----------------------------------- */
+
+
+/* ----------------footer---------------- */
+
+footer{
+    background-color: #303030;
+    padding: 60px 100px 10px 100px;
+}
+
+.footerFoot{
+    background-color: #303030;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    background-color: #303030;
+}
+
+.footer1{
+    width: 50%;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.footerPart1Heading{
+    color: #E6533C;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #7e7d7d;
+    padding: 4px;
+    line-height: 2;
+}
+
+.footerPart1Heading, .footerPart2Heading, .footerPart3Heading{
+    padding-bottom: 10px;
 }
